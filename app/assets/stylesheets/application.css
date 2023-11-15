@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: teal;
+}
+
+.card-bg-color {
+  background-color:rgb(6, 196, 196)!important;
+
+}
