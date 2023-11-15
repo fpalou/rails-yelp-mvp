@@ -1,0 +1,15 @@
+<div class="container row">
+  <% restaurants.each do |restaurant| %>
+    <div class="container col-3 mt-2">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= restaurant.name.capitalize %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= restaurant.category.capitalize %></h6>
+          <p class="card-text"><%= restaurant.address %></p>
+          <p class="card-text"><%= restaurant.phone_number %></p>
+          <p><%= link_to "Details", restaurant, {:class => "card-link"} %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

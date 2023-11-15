@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  resources :restaurants do
+    resources :reviews, only: %i[new create destroy] # Destroy va fuera pero no termino de entender why, para optimizar
+  end
 end
